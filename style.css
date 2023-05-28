@@ -62,7 +62,6 @@ nav ul li a:hover {
 .container,
 .container_main {
   min-height: calc(100vh - 120px);
-  margin-top: 50px;
 }
 
 .container__small,
