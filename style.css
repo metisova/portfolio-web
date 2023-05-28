@@ -125,6 +125,11 @@ p {
 .contact__logo {
   width: 30px;
   margin: 5px;
+  transition: transform 0.3s ease;
+}
+
+.contact__logo:hover {
+  transform: scale(1.2);
 }
 
 .names {
