@@ -1,3 +1,4 @@
+/* Body styles */
 body {
   background-color: #fcf5eb;
   color: #3b3e4f;
@@ -29,7 +30,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 nav ul li:first-child {
@@ -39,7 +40,7 @@ nav ul li:first-child {
 nav ul li a {
   color: #2b2d38;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 a:hover {
@@ -47,24 +48,26 @@ a:hover {
 }
 
 /* Main content styles */
-.container {
+.container,
+.container_main {
+  min-height: calc(100vh - 120px);
+  margin-top: 50px;
+}
+
+.container__small,
+.container_main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 120px);
+  width: 100%;
 }
 
 .block {
   padding: 30px;
   max-width: 600px;
-  text-align: left;
-  border-radius: 12px;
-  overflow: hidden;
+  text-align: center;
+  min-height: calc(50vh);
   flex-basis: 50%;
-}
-
-.text__info {
-  padding-right: 50px;
 }
 
 .heading {
@@ -75,13 +78,8 @@ a:hover {
   animation: typing 6s steps(20);
 }
 
-p {
-  font-family: sans-serif;
-}
-
-img {
-  width: 100%;
-  border-radius: 50%;
+.name {
+  font-size: 30px;
 }
 
 @keyframes typing {
@@ -92,6 +90,30 @@ img {
   to {
     width: 100%;
   }
+}
+
+p {
+  font-family: sans-serif;
+}
+
+.main__pic {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.our__photo {
+  width: 70%;
+  border-radius: 50%;
+}
+
+.contacts {
+  margin: 1.25rem 0 2.2rem;
+  margin-bottom: 12em;
+}
+
+.contact__logo {
+  width: 30px;
+  margin: 5px;
 }
 
 .description {
