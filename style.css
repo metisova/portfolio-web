@@ -1,6 +1,5 @@
 body {
-  background-color: 
-  #162B22;
+  background: linear-gradient(to bottom right, #162B22, #316e54);
   color: white;
 }
 
@@ -51,7 +50,39 @@ nav ul li a {
 }
 
 .block {
-  flex: 1;
+  background-color: #cadec8;
+  color: #162B22;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.heading {
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid; /* Add a blinking cursor effect */
+  animation: typing 6s steps(20);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.description {
+  margin-bottom: 0;
+}
+
+.names {
+  color: #f1824a;
 }
 
 /* Footer styles */
